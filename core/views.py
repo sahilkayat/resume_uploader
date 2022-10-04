@@ -2,9 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(requests):
-    context = {'home': 'active'}
-    return render(requests,'core/home.html',context)
+    
+    return render(requests,'core/home.html',{'home': 'active'})
 
 def contact(requests):
-    context = {'contact': 'active'}
-    return render(requests,'core/contact.html',context)
+    
+    return render(requests,'core/contact.html',{'contact': 'active'})
