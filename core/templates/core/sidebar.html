@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="border-right border-light ">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/picaman.jpeg' %}"
+      alt=""
+      class=" rounded-circle mt-5"
+      width="130px"
+      height="140px"
+    />
+    <h3 class="text-white mt-2 st-font">Aman Kayat</h3>
+  </div>
+  <hr class="border-light" />
+
+  <nav class="nav flex-column text-center " >
+    <a href="{% url 'home' %}" class="nav-link {{home}} text-white ">Home</a>
+    <a href="{% url 'services' %}" class="nav-link {{services}} text-white">Services</a>
+    <a href="{% url 'skill' %}" class="nav-link {{skill}} text-white">Skill</a>
+    <a href="{% url 'contact' %}" class="nav-link {{contact}} text-white">Contact</a>
+  </nav>
+</div>

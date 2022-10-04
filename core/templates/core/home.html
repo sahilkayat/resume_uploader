@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %} {% block content %} {% load static %}
+<div>
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/picaman.jpeg' %}"
+      alt="Profilepic"
+      srcset=""
+      class="img-thumbnail border mt-5"
+      width="170px"
+      
+    />
+  </div>
+
+  <div class="mt-3 mx-5 text-justify">
+    <h1 class="font-weight-bold st-font " style="position: relative; left:25px;">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 5rem;">
+        I am <b class="text-primary">Aman Kayat</b> having 5 years It is a long
+        established fact that a reader will be distracted by the readable
+        content of a page when looking at its layout.<br> The point of using Lorem
+        Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like
+        readable English. Many desktop publishing packages and web page editors
+        now use Lorem Ipsum as their default model text, and a search for 'lorem
+        ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes
+        on purpose (injected humour and the like).
+      </p>
+      <p>
+        There are many <b class="text-primary"> Tech Hack</b> of Lorem Ipsum
+        available, but the majority have suffered alteration in some form, by
+        injected humour, or randomised words which don't look even slightly
+        believable. If you are going to use a passage of Lorem Ipsum, you need
+        to be sure there isn't anything embarrassing hidden in the middle of
+        text. All the Lorem Ipsum generators on the Internet tend to repeat
+        predefined chunks as necessary, making this the first true generator on
+        the Internet. It uses a dictionary of over 200 Latin words, combined
+        with a handful of model sentence structures, to generate Lorem Ipsum
+        which looks reasonable. The generated Lorem Ipsum is therefore always
+        free from repetition, injected humour, or non-characteristic words etc.
+      </p>
+    </div>
+  </div>
+<div class="text-center">
+  <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3">Hire Me</a>
+  <a href="{% url 'contact'%}" class="btn btn-outline-info mx-5">Contact</a>
+</div>
+</div>
+{% endblock content %}

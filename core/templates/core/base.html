@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'core/css/core.css' %}"> 
+<style>
+    body{
+        height: 100%;
+  
+  background-image: linear-gradient(
+      66deg,
+      transparent 0%,
+      transparent 24%,
+      rgba(195, 195, 195, 0.04) 24%,
+      rgba(195, 195, 195, 0.04) 80%,
+      transparent 80%,
+      transparent 100%
+    ),
+    linear-gradient(
+      153deg,
+      transparent 0%,
+      transparent 29%,
+      rgba(195, 195, 195, 0.04) 29%,
+      rgba(195, 195, 195, 0.04) 45%,
+      transparent 45%,
+      transparent 100%
+    ),
+    linear-gradient(
+      199deg,
+      transparent 0%,
+      transparent 32%,
+      rgba(195, 195, 195, 0.04) 32%,
+      rgba(195, 195, 195, 0.04) 59%,
+      transparent 59%,
+      transparent 100%
+    ),
+    linear-gradient(
+      277deg,
+      transparent 0%,
+      transparent 56%,
+      rgba(195, 195, 195, 0.04) 56%,
+      rgba(195, 195, 195, 0.04) 57%,
+      transparent 57%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  color: whitesmoke;
+    }
+</style>
+
+{% block corecss %}{% endblock corecss %}
+    
+</head>
+<body >
+
+   <div class="container-fluid ">
+       <div class="row">
+           <div class="col-sm-2 t">
+           {% include 'core/sidebar.html' %}
+          
+           </div>
+           <div class="col-sm-10">
+               {% block content %}   {% endblock content %}
+           </div>
+       </div>
+
+   </div>
+
+
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+
+</body>
+</html>
